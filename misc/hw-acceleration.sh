@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2024 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2024 damdo
+# Author: damdo (damdoster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/damdo/Proxmox/raw/main/LICENSE
 # Execute within the Proxmox shell
-# bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/hw-acceleration.sh)"
+# bash -c "$(wget -qLO - https://github.com/damdo/Proxmox/raw/main/misc/hw-acceleration.sh)"
 
 set -e
 function header_info {
@@ -41,7 +41,7 @@ function msg_ok() {
   echo -e "${BFR} ${CM} ${GN}${msg}${CL}"
 }
 
-if ! pveversion | grep -Eq "pve-manager/(8\.[1-3])"; then
+if ! pveversion | grep -Eq "pve-manager/(8\.[1-4])"; then
   msg_error "This version of Proxmox Virtual Environment is not supported"
   echo -e "Requires PVE Version 8.1 or higher"
   echo -e "Exiting..."

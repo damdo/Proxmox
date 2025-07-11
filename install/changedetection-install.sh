@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2024 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2024 damdo
+# Author: damdo (damdoster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/damdo/Proxmox/raw/main/LICENSE
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
 color
@@ -28,7 +28,7 @@ $STD apt-get install -y \
   libatk1.0-0 \
   libcairo2 \
   libcups2 \
-  libdbus-1-3 \
+  libdbus-1-4 \
   libexpat1 \
   libgbm-dev \
   libgbm1 \
