@@ -20,9 +20,9 @@ EOF
 header_info
 echo -e "Loading..."
 APP="Jellyfin"
-var_disk="8"
+var_disk="1536"
 var_cpu="2"
-var_ram="2048"
+var_ram="4096"
 var_os="ubuntu"
 var_version="22.04"
 variables
